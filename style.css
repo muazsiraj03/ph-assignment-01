@@ -56,7 +56,6 @@ nav ul li {
     url(./img/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
   max-width: 1550px;
   height: 786px;
   margin: auto;
@@ -103,6 +102,7 @@ span {
 /* speaker section style start */
 #speaker {
   padding: 50px 0 50px 0;
+  background: #f8faff;
 }
 .spkr-head {
   padding: 0 0 40px 0;
@@ -237,11 +237,7 @@ margin-bottom: 10px;
 .plan-feature{
   padding: 16px;
 }
-/* .plan-feature ul{
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-} */
+
 
 .plan-feature ul {
   list-style: disc;
@@ -304,90 +300,95 @@ border-color: #e5e7eb30;
 /* pricing section style end */
 
 
-/* FAQ section style start */
+/* ==========================
+   Hackathon Section
+========================== */
 
-.faq-section {
-  padding: 100px 0;
-  background: #ffffff;
+.hackathon {
+    padding: 100px 0;
+    background: #f8faff;
 }
 
-.faq-container {
-  width: 1320px;
-  margin: 0 auto;
+.hackathon-container {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
 }
 
-.faq-heading {
-  text-align: center;
-  margin-bottom: 60px;
+.hackathon-tag {
+    display: inline-block;
+    background: #2563eb;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 18px;
 }
 
-.faq-heading h2 {
-  font-size: 42px;
-  font-weight: 700;
-  color: #111827;
-  margin-bottom: 15px;
+.hackathon-header h2 {
+    font-size: 42px;
+    color: #111827;
+    margin-bottom: 18px;
 }
 
-.faq-heading p {
-  font-size: 18px;
-  color: #6b7280;
+.hackathon-header p {
+    width: 700px;
+    margin: auto;
+    color: #6b7280;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 60px;
 }
 
-.faq-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.hackathon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 60px;
 }
 
-.faq-item {
-  border: 1px solid #dbe4f3;
-  border-radius: 12px;
-  background: #ffffff;
-  transition: 0.3s;
+.hack-card {
+    background: #fff;
+    padding: 35px;
+    border-radius: 16px;
+    border: 1px solid #dbeafe;
+    transition: .3s;
 }
 
-.faq-item:hover {
-  border-color: #2563eb;
-  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.08);
+.hack-card:hover {
+    transform: translateY(-8px);
+    border-color: #2563eb;
+    box-shadow: 0 15px 40px rgba(37,99,235,.12);
 }
 
-.faq-item summary {
-  list-style: none;
-  cursor: pointer;
-  padding: 24px 30px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #111827;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.hack-card h3 {
+    font-size: 22px;
+    color: #111827;
+    margin-bottom: 18px;
 }
 
-.faq-item summary::-webkit-details-marker {
-  display: none;
+.hack-card p {
+    font-size: 28px;
+    color: #2563eb;
+    font-weight: 700;
 }
 
-.faq-item summary::after {
-  content: "+";
-  font-size: 28px;
-  color: #2563eb;
-  font-weight: bold;
-  transition: 0.3s;
+.hack-btn {
+    padding: 16px 42px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
 }
 
-.faq-item[open] summary::after {
-  content: "−";
+.hack-btn:hover {
+    background: #1d4ed8;
 }
-
-.faq-item p {
-  padding: 0 30px 24px;
-  color: #6b7280;
-  font-size: 17px;
-  line-height: 1.8;
-}
-
-/* FAQ section style end */
-
 
 /* Footer section style start */
 #footer {
@@ -430,8 +431,3 @@ font-weight: 400;
 color: #ffffffc2;
 }
 
-
-
-
-
-}
