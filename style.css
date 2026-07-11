@@ -389,3 +389,49 @@ border-color: #e5e7eb30;
 /* FAQ section style end */
 
 
+/* Footer section style start */
+#footer {
+  background-color: #0D1B2A;
+  height: 145px;
+}
+
+.footer-logo-social{
+  width: 1320px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 15px 0;
+  align-items: center;
+}
+
+.footer-social{
+  display: flex;
+  gap: 8px;
+}
+.footer-social img{
+  width: 32px;
+  height: 32px;
+
+}
+
+.footer-copyright{
+width: 1320px;
+margin: auto;
+}
+.footer-copyright hr{
+border: none;
+    border-top: 1px solid #999;
+}
+.footer-copyright p{
+text-align: center;
+margin-top: 25px;
+font-size: 16px;
+font-weight: 400;
+color: #ffffffc2;
+}
+
+
+
+
+
+}
